@@ -11,8 +11,8 @@ export default class Connect4{
 
     newGame(){
         for(let i = 1; i <= 2; i++){
-            //let input = prompt(`indiquer le prénom du joueur ${i} :`)
-            this._players[i] = new Player(i, i);
+            let input = prompt(`indiquer le prénom du joueur ${i} :`)
+            this._players[i] = new Player(input, i);
         }
         let $trs = Array.prototype.slice.call(document.querySelectorAll('tr'), 0);
 
@@ -34,7 +34,6 @@ export default class Connect4{
 
     _play(idPlayer, idCol){
         var grid = this._model.get();
-        console.log('play >> ', grid);
         for(let row = grid.length - 1; row >= 0; row--){
             if(grid[row][idCol] === 0){
                 document.querySelectorAll('tr')[row].querySelectorAll('td')[idCol].setAttribute('data-value', idPlayer);
@@ -42,7 +41,7 @@ export default class Connect4{
                 this._model.set(row, idCol, idPlayer);
                 this._players[idPlayer].substractToken();
                 if(this._check()){
-                    alert(idPlayer + " >>>> win !!!");
+                    alert(this._players[idPlayer].getName() + " gagne !");
                 }
                 break;
             }
@@ -51,7 +50,6 @@ export default class Connect4{
 
     _reset(){
         this._model.reset();
-        console.log('reset >> ', this._model.get());
         this._counter = 0;
         Array.prototype.slice.call(document.querySelectorAll('tr'), 0).forEach(($tr, ir)=>{
             Array.prototype.slice.call($tr.querySelectorAll('td'), 0).forEach(($td, ic)=>{
