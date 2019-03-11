@@ -1,8 +1,25 @@
+import Connect4 from './libs/connect-4.js';
+
 window.addEventListener('DOMContentLoaded', ()=>{
+    let game = new Connect4();
+    document.getElementById('new').addEventListener('click', ()=>{
+        // if(game instanceof Connect4){
+        //     console.log('>>> ', game);
+        //     game = null;
+        // }
+        game.newGame();
+    })
+
+
+
+
+
+
+    /*
     let data = [];
     let $trs = Array.prototype.slice.call(document.querySelectorAll('tr'), 0);
     $trs.forEach(($tr, ir)=>{
-        row = [];
+        let row = [];
         Array.prototype.slice.call($tr.querySelectorAll('td'), 0).forEach(($td, ic)=>{
             row.push(Number($td.getAttribute('data-value').trim()));
             $td.addEventListener('click', ()=>{
@@ -55,4 +72,5 @@ window.addEventListener('DOMContentLoaded', ()=>{
         return win
     };
     console.log(puissance4(data));
+    */
 });

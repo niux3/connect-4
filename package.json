@@ -1,7 +1,7 @@
 {
-    "name": "lightjs",
+    "name": "connect 4",
     "version": "0.0.1",
-    "description": "light framework with nodejs",
+    "description": "simple game with nodejs",
     "main": "index.js",
     "scripts": {
         "dev": "NODE_ENV=dev webpack",
@@ -10,7 +10,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "renaudbourdeau@gmail.com",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "aproba": "^2.0.0",
         "autoprefixer": "^7.1.2",
