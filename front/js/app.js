@@ -1,10 +1,13 @@
 window.addEventListener('DOMContentLoaded', ()=>{
     let data = [];
     let $trs = Array.prototype.slice.call(document.querySelectorAll('tr'), 0);
-    $trs.forEach(($tr)=>{
+    $trs.forEach(($tr, ir)=>{
         row = [];
-        Array.prototype.slice.call($tr.querySelectorAll('td'), 0).forEach(($td)=>{
+        Array.prototype.slice.call($tr.querySelectorAll('td'), 0).forEach(($td, ic)=>{
             row.push(Number($td.getAttribute('data-value').trim()));
+            $td.addEventListener('click', ()=>{
+                console.log(ir, ic)
+            });
         });
         data.push(row);
     });

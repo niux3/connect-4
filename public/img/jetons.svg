@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64"
-   height="64"
-   viewBox="0 0 16.933333 16.933334"
+   width="80"
+   height="80"
+   viewBox="0 0 21.166666 21.166667"
    version="1.1"
    id="svg8"
-   inkscape:export-filename="/home/niuxe/www/help/puissance-4/img/_0.png"
+   inkscape:export-filename="/home/niuxe/www/puissance-4/public/img/_2.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="1.0818965"
+     inkscape:cx="1.2604679"
      inkscape:cy="27.166042"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
@@ -56,7 +56,7 @@
      inkscape:label="bg"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-280.06665)"
+     transform="translate(0,-275.83332)"
      sodipodi:insensitive="true">
     <rect
        id="rect3699"
@@ -70,15 +70,15 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="jeton"
-     style="display:inline">
-    <ellipse
-       style="fill:#303030;fill-opacity:1;stroke-width:0.1984375"
+     style="display:inline"
+     transform="translate(0,4.2333333)">
+    <circle
+       style="fill:#cb5053;fill-opacity:1;stroke-width:0.26458344"
        id="path4507"
-       cx="8.4666662"
-       cy="8.4666662"
-       rx="6.3499999"
-       ry="6.3499951"
+       cx="10.583333"
+       cy="6.3499999"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-ydpi="96"
+       r="8.4666662" />
   </g>
 </svg>

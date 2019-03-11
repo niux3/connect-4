@@ -1,0 +1,15 @@
+{% extends '../layout/default.twig' %}
+
+{% block content %}
+<table>
+    {% for row in data %}
+    <tr>
+        {% for col in row %}
+        <td data-value="{{ col }}">
+            <img src="/img/_{{ col }}.png" alt="">
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
